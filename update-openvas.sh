@@ -16,3 +16,10 @@ SCRIPT_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 # Rebuild / Update
 # ---------------------------------------------------\
 /usr/sbin/openvasmd --rebuild --update --verbose --progress
+
+# Restart services
+# ---------------------------------------------------\
+systemctl restart openvas-manager
+systemctl restart openvas-scanner
+
+# openvas-check-setup --v9
