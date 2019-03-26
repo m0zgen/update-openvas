@@ -17,6 +17,6 @@ Execute script:
 ### Schedule
 Copy script to /etc/cron.daily/:
 ```bash
-cd update-openvas.sh /etc/cron.daily/
+cp update-openvas.sh /etc/cron.daily/
 ```
 Enjoy!
